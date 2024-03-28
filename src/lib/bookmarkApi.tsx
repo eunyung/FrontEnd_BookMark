@@ -13,3 +13,8 @@ export async function getAllBookmarks(
 
   return res.data;
 }
+
+export async function saveBookmark(bookmark: { title: string; url: string }) {
+  const res = await axios.post(`${API_BASE_URL}/api/bookmarks`, bookmark);
+  return res.data;
+}

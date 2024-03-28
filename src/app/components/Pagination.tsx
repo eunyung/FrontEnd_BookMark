@@ -26,21 +26,29 @@ const Pagination: React.FC<PaginationProps> = ({ bookmarks }) => {
           <li
             className={"page-item " + (bookmarks.hasPrevious ? "" : "disabled")}
           >
-            <Link href={firstPage} className="page-link"></Link>
+            <Link href={firstPage} className="page-link">
+              First
+            </Link>
           </li>
 
           <li
             className={"page-item " + (bookmarks.hasPrevious ? "" : "disabled")}
           >
-            <Link href={previousPage} className="page-link"></Link>
+            <Link href={previousPage} className="page-link">
+              Previous
+            </Link>
           </li>
 
           <li className={"page-item " + (bookmarks.hasNext ? "" : "disabled")}>
-            <Link href={nextPage} className="page-link"></Link>
+            <Link href={nextPage} className="page-link">
+              Next
+            </Link>
           </li>
 
           <li className={"page-item " + (bookmarks.hasNext ? "" : "disabled")}>
-            <Link href={lastPage} className="page-link"></Link>
+            <Link href={lastPage} className="page-link">
+              Last
+            </Link>
           </li>
         </ul>
       </nav>
