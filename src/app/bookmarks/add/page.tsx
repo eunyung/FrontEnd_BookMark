@@ -1,7 +1,7 @@
 "use client";
 
+import { saveBookmark } from "@/lib/bookmarkAdd";
 import React, { useState } from "react";
-import { saveBookmark } from "@/lib/bookmarkApi";
 
 const AddBookmarkPage = () => {
   const [title, setTitle] = useState("");
